@@ -1,0 +1,147 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.eswc2006.org/technologies/ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#prison">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#penalty"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#law"/>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#place"/>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#lawOffice">
+    <rdfs:subClassOf rdf:resource="http://www.eswc2006.org/technologies/ontology#place"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#crime"/>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#judge">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#person"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#money">
+    <rdfs:subClassOf rdf:resource="http://www.eswc2006.org/technologies/ontology#penalty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#doc"/>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#court">
+    <rdfs:subClassOf rdf:resource="http://www.eswc2006.org/technologies/ontology#place"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#opinion"/>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#lawyer">
+    <rdfs:subClassOf rdf:resource="http://www.eswc2006.org/technologies/ontology#person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#action"/>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#lawArticle">
+    <rdfs:subClassOf rdf:resource="http://www.eswc2006.org/technologies/ontology#law"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.eswc2006.org/technologies/ontology#clerk">
+    <rdfs:subClassOf rdf:resource="http://www.eswc2006.org/technologies/ontology#person"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#hasActed">
+    <rdfs:label xml:lang="en">has acted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#action"/>
+    <rdfs:domain>
+      <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#defendant"/>
+    </rdfs:domain>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#hasHappenedIn"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#hasDefendant">
+    <rdfs:label xml:lang="en">has defendant</rdfs:label>
+    <rdfs:range>
+      <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#defendant"/>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#doc"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#inCourt">
+    <rdfs:label xml:lang="en">in court</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#court"/>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#doc"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#charged">
+    <rdfs:label xml:lang="en">charged</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#crime"/>
+    <rdfs:domain>
+      <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#defendant"/>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#测试cs"/>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#baseOn">
+    <rdfs:label xml:lang="en">base on</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#law"/>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#crime"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#hasOpinion">
+    <rdfs:label xml:lang="en">has opinion</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#opinion"/>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#lawyer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#crimeTogether">
+    <rdfs:label xml:lang="en">crime together</rdfs:label>
+    <rdfs:range>
+      <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#defendant"/>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#defendant"/>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#hasLawyer">
+    <rdfs:label xml:lang="en">has lawyer</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#lawyer"/>
+    <rdfs:domain>
+      <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#defendant"/>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#accepted">
+    <rdfs:label xml:lang="en">accepted</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#opinion"/>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#court"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#hasPenalty">
+    <rdfs:label xml:lang="en">has penalty</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#penalty"/>
+    <rdfs:domain>
+      <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#defendant"/>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#hasJudge">
+    <rdfs:label xml:lang="en">has judge</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#judge"/>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#doc"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#isFrom">
+    <rdfs:label xml:lang="en">is from</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#lawOffice"/>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#lawyer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#isPartof">
+    <rdfs:label xml:lang="en">is part of</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#law"/>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#lawArticle"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.eswc2006.org/technologies/ontology#hasHappenedIn">
+    <rdfs:label xml:lang="en">has happened in</rdfs:label>
+    <rdfs:range rdf:resource="http://www.eswc2006.org/technologies/ontology#doc"/>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#action"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#occupation"/>
+  <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#Name"/>
+  <owl:DatatypeProperty rdf:about="http://www.eswc2006.org/technologies/ontology#defendant">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.eswc2006.org/technologies/ontology#defendant"/>
+    <rdfs:subClassOf rdf:resource="http://www.eswc2006.org/technologies/ontology#person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:DatatypeProperty>
+  <j.0:defendant rdf:about="http://www.eswc2006.org/technologies/ontology#张三">
+    <j.0:测试cs>
+      <j.0:defendant rdf:about="http://www.eswc2006.org/technologies/ontology#李四">
+        <j.0:occupation>程序员</j.0:occupation>
+        <j.0:Name>被告人2</j.0:Name>
+      </j.0:defendant>
+    </j.0:测试cs>
+    <j.0:occupation>农民</j.0:occupation>
+    <j.0:Name>被告人1</j.0:Name>
+  </j.0:defendant>
+</rdf:RDF>

@@ -1,0 +1,164 @@
+ {
+              "document_name":{"index": "", "text": ""},
+              "document_producer":{"index": "", "text": ""},
+              "document_type":{"index": "", "text": ""},
+              "document_reference":{
+                "JDN":{"index": "", "text": ""},
+                "trail":{"index": "", "text": ""}
+              },
+              "document_category": {"index": "", "text": ""},
+              "prosecutors":{"index": "", "text": ""},
+              "defendants":[
+                {
+                  "defendant_base":{
+                    "defendant_name": {"index": "", "text": ""},
+                    "NN": {"index": "", "text": ""},
+                    "FN": {"index": "", "text": ""},
+                    "S": {"index": "", "text": ""},
+                    "BD": {"index": "", "text": ""},
+                    "BA": {"index": "", "text": ""},
+                    "PN": {"index": "", "text": ""},
+                    "defendant_nativePlace": {"index": "", "text": ""},
+                    "FA": {"index": "", "text": ""},
+                    "defendant_occupation": {"index": "", "text": ""},
+                    "DR": {"index": "", "text": ""},
+                    "PS": {"index": "", "text": ""},
+                    "E": {"index": "", "text": ""},
+                    "defendant_capacity": {"index": "", "text": ""},
+                    "defendant_identity": {"index": "", "text": ""},
+                    "special_identity": {
+                      "identity_foreigner": {"index": "", "text": ""},
+                      "identity_hongkongmacau": {"index": "", "text": ""},
+                      "identity_taiwan": {"index": "", "text": ""},
+                      "identity_partygroupings": {"index": "", "text": ""},
+                      "identity_officer": {"index": "", "text": ""},
+                      "identity_leader": {"index": "", "text": ""},
+                      "identity_intellectual": {"index": "", "text": ""},
+                      "identity_npc_member": {"index": "", "text": ""},
+                      "identity_cppcc_members": {"index": "", "text": ""},
+                      "identity_star": {"index": "", "text": ""},
+                      "identity_sportstar": {"index": "", "text": ""},
+                      "identity_others": {"index": "", "text": ""}
+                    }
+                  } ,
+                  "defendant_preConvictions":[
+                    {
+                      "preConviction_time": {"index": "", "text": ""},
+                      "preConviction_chargeName": {"index": "", "text": ""},
+                      "preConviction_penalty": [{"index": "", "text": ""}],
+                      "preConviction_release": {"index": "", "text": ""}
+                    }
+                  ],
+                  "charges":[
+                    {
+                      "suspect_charge_name":{"index": "", "text": ""},
+                      "charge_enforcements":[
+                        {
+                          "charge_enforcement_type": {"index": "", "text": ""},
+                          "charge_enforcement_time": {"index": "", "text": ""},
+                          "charge_enforcement_organ": {"index": "", "text": ""}
+                        }
+                      ]
+                    }
+                  ],
+                  "detain":{
+                    "inPrison":{"index": "", "text": ""},
+                    "inPrison_place": {"index": "", "text": ""}
+                  },
+                  "attorneys":[
+                    {
+                      "attorney_type":{"index": "", "text": ""},
+                      "attorney_name":{"index": "", "text": ""},
+                      "attorney_workplace":{"index": "", "text": ""},
+                      "attorney_occupation":{"index": "", "text": ""},
+                      "attorney_relation":{"index": "", "text": ""}
+                    }
+                  ],
+                  "judgement":{
+                    "defendant_joint_crime":{"index": "", "text": ""},
+                    "penalties":[
+                      {
+                        "JA":{"index": "", "text": ""},
+                        "penalty_principal":{"index": "", "text": ""},
+                        "penalty_suspend": {"index": "", "text": ""},
+                        "penalty_supplementaries":[
+                          {
+                            "penalty_supplementary_type":{"index": "", "text": ""},
+                            "penalty_supplementary_content":{"index": "", "text": ""},
+                            "penalty_supplementary_money": {"index": "", "text": ""}
+                          }
+                        ],
+                        "penalty_duration":{"index": "", "text": ""},
+                        "penalty_notimprison": {"index": "", "text": ""}
+                      }
+                    ]
+                  }
+                }
+              ],
+              "accusation":{
+                "accusation_type":{"index": "", "text": ""},
+                "accusation_procurator":{"index": "", "text": ""},
+                "accusation_reference":{"index": "", "text": ""},
+                "prosecute_charge_name":{"index": "", "text": ""},
+                "accusation_time":{"index": "", "text": ""}
+              },
+              "hear_info":{
+                "hear_way":{"index": "", "text": ""},
+                "hear_procedure":{"index": "", "text": ""},
+                "hear_isPublic":{"index": "", "text": ""},
+                "hear_prosecutors":[
+                  {
+                    "hear_prosecutor_name": {"index": "", "text": ""},
+                    "hear_prosecutor_occupation": {"index": "", "text": ""}
+                  }
+                ],
+                "hear_defendant_names":[{"index": "", "text": ""}],
+                "hear_attorney_names":[{"index": "", "text": ""}],
+                "hear_time":{"index": "", "text": ""}
+              },
+              "evidences":{
+                "evidence_object":[{"index": "", "text": ""}],
+                "evidence_text":[{"index": "", "text": ""}],
+                "witness_testimony": [{"index": "", "text": ""}],
+                "plaintiff_statement": [{"index": "", "text": ""}],
+                "accused_statement": [{"index": "", "text": ""}],
+                "expert_conclusion": [{"index": "", "text": ""}],
+                "evidence_records": [{"index": "", "text": ""}],
+                "evidence_audiovisuals": [{"index": "", "text": ""}],
+                "evidence_others": [{"index": "", "text": ""}]
+              },
+              "judgment":{
+                "affirm_content":[{"index": "", "text": ""}],
+                "notaffirm_content":[{"index": "", "text": ""}],
+                "notaffirm_reasons": {
+                  "procedure_illegal": {"index": "", "text": ""},
+                  "means_illegal": {"index": "", "text": ""},
+                  "form_illegal": {"index": "", "text": ""},
+                  "fakeevidence": {"index": "", "text": ""},
+                  "evidence_suspected": {"index": "", "text": ""},
+                  "fakecopy": {"index": "", "text": ""},
+                  "evidence_flaw": {"index": "", "text": ""},
+                  "evidence_unverify": {"index": "", "text": ""},
+                  "fact_norelevance": {"index": "", "text": ""},
+                  "doubt": {"index": "", "text": ""},
+                  "evidence_old": {"index": "", "text": ""},
+                  "other": {"index": "", "text": ""}
+                }, "laws":[
+                  {
+                    "law_name":{"index": "", "text": ""},
+                    "article_names":[{"index": "", "text": ""}]
+                  }
+                ],
+                "appeal":{
+                  "appeal_due":{"index": "", "text": ""},
+                  "appeal_courts":[{"index": "", "text": ""}]
+                },
+                "staff":{
+                  "judges":[{"index": "", "text": ""}],
+                  "chief_judge": {"index": "", "text": ""},
+                  "jurors":[{"index": "", "text": ""}],
+                  "clerks":[{"index": "", "text": ""}]
+                },
+                "judgement_date": {"index": "", "text": ""}
+              }
+            }
