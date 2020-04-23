@@ -74,7 +74,7 @@
                       "attorney_relation":{"index": "", "text": ""}
                     }
                   ],
-                  "judgement":{
+                  "judgment":{
                     "defendant_joint_crime":{"index": "", "text": ""},
                     "penalties":[
                       {
