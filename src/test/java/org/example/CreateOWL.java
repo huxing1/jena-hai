@@ -139,10 +139,13 @@ public class CreateOWL {
 
         DatatypeProperty nameDatatypeProperty = base.createDatatypeProperty(NS + "Name");
         DatatypeProperty occupationDatatypeProperty = base.createDatatypeProperty(NS + "occupation");
+        DatatypeProperty indexDatatypeProperty = base.createDatatypeProperty(NS + "index");
+        DatatypeProperty textDatatypeProperty = base.createDatatypeProperty(NS + "text");
         //TODO 测试测试
         Individual individual1 = defendantClass.createIndividual(NS + "被告人1XXX");
         individual1.addProperty(nameDatatypeProperty,"被告人1");
         individual1.addProperty(occupationDatatypeProperty,"农民");
+
 
         Individual individual2 = defendantClass.createIndividual(NS + "被告人2XXX");
         individual2.addProperty(nameDatatypeProperty,"被告人2");

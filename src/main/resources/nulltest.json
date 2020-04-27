@@ -1,0 +1,160 @@
+{
+  "document_reference": {
+    "trail": null,
+    "JDN": null
+  },
+  "document_name": null,
+  "defendants": [
+    {
+      "defendant_preConvictions": [
+        {
+          "preConviction_time": null,
+          "preConviction_chargeName": null,
+          "preConviction_penalty": [],
+          "preConviction_release": null
+        }
+      ],
+      "charges": [
+        {
+          "suspect_charge_name": null,
+          "charge_enforcements": [
+            {
+              "charge_enforcement_type": null,
+              "charge_enforcement_time": null,
+              "charge_enforcement_organ": null
+            }
+          ]
+        }
+      ],
+      "defendant_base": {
+        "NN": null,
+        "BD": null,
+        "PS": null,
+        "defendant_nativePlace": null,
+        "E": null,
+        "FN": null,
+        "defendant_capacity": null,
+        "defendant_occupation": null,
+        "DR": null,
+        "S": null,
+        "defendant_identity": null,
+        "defendant_name": null,
+        "FA": null,
+        "special_identity": {
+          "identity_others": null,
+          "identity_star": null,
+          "identity_partygroupings": null,
+          "identity_intellectual": null,
+          "identity_cppcc_members": null,
+          "identity_sportstar": null,
+          "identity_officer": null,
+          "identity_npc_member": null,
+          "identity_foreigner": null,
+          "identity_taiwan": null,
+          "identity_leader": null,
+          "identity_hongkongmacau": null
+        },
+        "PN": null,
+        "BA": null
+      },
+      "judgment": {
+        "penalties": [
+          {
+            "penalty_notimprison": null,
+            "penalty_principal": null,
+            "penalty_suspend": null,
+            "JA": null,
+            "penalty_supplementaries": [
+              {
+                "penalty_supplementary_money": null,
+                "penalty_supplementary_content": null,
+                "penalty_supplementary_type": null
+              }
+            ],
+            "penalty_duration": null
+          }
+        ],
+        "defendant_joint_crime": null
+      },
+      "attorneys": [
+        {
+          "attorney_type": null,
+          "attorney_workplace": null,
+          "attorney_relation": null,
+          "attorney_name": null,
+          "attorney_occupation": null
+        }
+      ],
+      "detain": {
+        "inPrison": null,
+        "inPrison_place": null
+      }
+    }
+  ],
+  "accusation": {
+    "accusation_reference": null,
+    "accusation_procurator": null,
+    "prosecute_charge_name": null,
+    "accusation_time": null,
+    "accusation_type": null
+  },
+  "judgment": {
+    "laws": [
+      {
+        "law_name": null,
+        "article_names": []
+      }
+    ],
+    "judgement_date": null,
+    "notaffirm_reasons": {
+      "fact_norelevance": null,
+      "procedure_illegal": null,
+      "fakecopy": null,
+      "other": null,
+      "evidence_old": null,
+      "form_illegal": null,
+      "fakeevidence": null,
+      "doubt": null,
+      "evidence_unverify": null,
+      "means_illegal": null,
+      "evidence_flaw": null,
+      "evidence_suspected": null
+    },
+    "notaffirm_content": [],
+    "staff": {
+      "judges": [],
+      "chief_judge": null,
+      "jurors": [],
+      "clerks": []
+    },
+    "appeal": {
+      "appeal_due": null,
+      "appeal_courts": []
+    },
+    "affirm_content": []
+  },
+  "document_category": null,
+  "document_producer": null,
+  "hear_info": {
+    "hear_way": null,
+    "hear_time": null,
+    "hear_isPublic": null,
+    "hear_attorney_names": [],
+    "hear_defendant_names": [],
+    "hear_procedure": null,
+    "hear_prosecutors": []
+  },
+  "evidences": {
+    "newevidence_object": [],
+    "newevidence_exam": [],
+    "newevidence_defendant": [],
+    "plaintiff_statement": [],
+    "newevidence_witness": [],
+    "newevidence_victim": [],
+    "newevidence_text": [],
+    "newevidence_audio": [],
+    "newevidence_investigate": []
+  },
+  "document_type": null,
+  "prosecutors": null
+}

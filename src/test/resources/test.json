@@ -1,0 +1,328 @@
+{
+  "document_reference": {
+    "trail": null,
+    "JDN": null
+  },
+  "document_name": null,
+  "defendants": [
+    {
+      "defendant_preConvictions": [
+        {
+          "preConviction_time": {
+            "index": "128,129,130,131,132",
+            "text": "2010年3月2日"
+          },
+          "preConviction_chargeName": null,
+          "preConviction_penalty": [{
+            "index": "111",
+            "text": "前科"},{
+            "index": "222",
+            "text": "犯罪"}],
+          "preConviction_release": {
+            "index": "333",
+            "text": "前科刑满日期"}
+        }
+      ],
+      "charges": [
+        {
+          "suspect_charge_name": {
+            "index": "128,129,130,131,132",
+            "text": "故意伤害罪"
+          },
+          "charge_enforcements": [
+            {
+              "charge_enforcement_type": {
+                "index": "153,154,155,156",
+                "text": "取保候审"
+              },
+              "charge_enforcement_time": {
+                "index": "134,135,136,137,138,139,140,141,142,143",
+                "text": "2018年2月20日"
+              },
+              "charge_enforcement_organ": {
+                "index": "145,146,147,148,149,150",
+                "text": "平安县公安局"
+              }
+            },
+            {
+              "charge_enforcement_type": {
+                "index": "173,174,175,176",
+                "text": "取保候审"
+              },
+              "charge_enforcement_time": {
+                "index": "159,160,161,162,163,164,165,166,167",
+                "text": "2018年6月1日"
+              },
+              "charge_enforcement_organ": {
+                "index": "169,170",
+                "text": "本院"
+              }
+            }
+          ]
+        }
+      ],
+      "defendant_base": {
+        "NN": null,
+        "BD": {
+          "index": "46,47,48,49,50,51,52,53,54,55",
+          "text": "1996年9月26日"
+        },
+        "PS": null,
+        "defendant_nativePlace": null,
+        "E": {
+          "index": "88,89",
+          "text": "初中"
+        },
+        "FN": {
+          "index": "187",
+          "text": "无"
+        },
+        "defendant_capacity": null,
+        "defendant_occupation": {
+          "index": "93,94",
+          "text": "无业"
+        },
+        "DR": {
+          "index": "112,113,114,115,116,117,118,119,120,121,122,123",
+          "text": "平安县西凉县三星村三星组"
+        },
+        "S": {
+          "index": "44",
+          "text": "男"
+        },
+        "defendant_identity": null,
+        "defendant_name": {
+          "index": null,
+          "text": "徐某松"
+        },
+        "FA": {
+          "index": "101,102,103,104,105,106,107,108,109",
+          "text": "贵州省临鑫市平安县"
+        },
+        "special_identity": {
+          "identity_others": null,
+          "identity_star": null,
+          "identity_partygroupings": null,
+          "identity_intellectual": null,
+          "identity_cppcc_members": null,
+          "identity_sportstar": null,
+          "identity_officer": null,
+          "identity_npc_member": null,
+          "identity_foreigner": null,
+          "identity_taiwan": null,
+          "identity_leader": null,
+          "identity_hongkongmacau": null
+        },
+        "PN": {
+          "index": "85,86",
+          "text": "汉族"
+        },
+        "BA": null
+      },
+      "judgment": {
+        "penalties": [
+          {
+            "penalty_notimprison": null,
+            "penalty_principal": null,
+            "penalty_suspend": null,
+            "JA": null,
+            "penalty_supplementaries": [
+              {
+                "penalty_supplementary_money": null,
+                "penalty_supplementary_content": null,
+                "penalty_supplementary_type": null
+              }
+            ],
+            "penalty_duration": null
+          }
+        ],
+        "defendant_joint_crime": null
+      },
+      "attorneys": [
+        {
+          "attorney_type": null,
+          "attorney_workplace": null,
+          "attorney_relation": null,
+          "attorney_name": null,
+          "attorney_occupation": null
+        }
+      ],
+      "detain": {
+        "inPrison": null,
+        "inPrison_place": null
+      }
+    },
+    {
+      "defendant_preConvictions": [
+        {
+          "preConviction_time": null,
+          "preConviction_chargeName": null,
+          "preConviction_penalty": [],
+          "preConviction_release": null
+        }
+      ],
+      "charges": [
+        {
+          "suspect_charge_name": null,
+          "charge_enforcements": [
+            {
+              "charge_enforcement_type": null,
+              "charge_enforcement_time": null,
+              "charge_enforcement_organ": null
+            }
+          ]
+        }
+      ],
+      "defendant_base": {
+        "NN": null,
+        "BD": {
+          "index": "191,192,193,194,195,196,197,198,199,200",
+          "text": "1993年4月21日"
+        },
+        "PS": null,
+        "defendant_nativePlace": null,
+        "E": {
+          "index": "233,234",
+          "text": "高中"
+        },
+        "FN": null,
+        "defendant_capacity": null,
+        "defendant_occupation": {
+          "index": "238,239",
+          "text": "务工"
+        },
+        "DR": {
+          "index": "257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272",
+          "text": "平安县西凉县第二十四区街道办事处"
+        },
+        "S": {
+          "index": "189",
+          "text": "男"
+        },
+        "defendant_identity": null,
+        "defendant_name": null,
+        "FA": {
+          "index": "246,247,248,249,250,251,252,253,254",
+          "text": "贵州省临鑫市平安县"
+        },
+        "special_identity": {
+          "identity_others": null,
+          "identity_star": null,
+          "identity_partygroupings": null,
+          "identity_intellectual": null,
+          "identity_cppcc_members": null,
+          "identity_sportstar": null,
+          "identity_officer": null,
+          "identity_npc_member": null,
+          "identity_foreigner": null,
+          "identity_taiwan": null,
+          "identity_leader": null,
+          "identity_hongkongmacau": null
+        },
+        "PN": {
+          "index": "230,231",
+          "text": "汉族"
+        },
+        "BA": null
+      },
+      "judgment": {
+        "penalties": [
+          {
+            "penalty_notimprison": null,
+            "penalty_principal": null,
+            "penalty_suspend": null,
+            "JA": null,
+            "penalty_supplementaries": [
+              {
+                "penalty_supplementary_money": null,
+                "penalty_supplementary_content": null,
+                "penalty_supplementary_type": null
+              }
+            ],
+            "penalty_duration": null
+          }
+        ],
+        "defendant_joint_crime": null
+      },
+      "attorneys": [
+        {
+          "attorney_type": null,
+          "attorney_workplace": null,
+          "attorney_relation": null,
+          "attorney_name": null,
+          "attorney_occupation": null
+        }
+      ],
+      "detain": {
+        "inPrison": null,
+        "inPrison_place": null
+      }
+    }
+  ],
+  "accusation": {
+    "accusation_reference": null,
+    "accusation_procurator": null,
+    "prosecute_charge_name": null,
+    "accusation_time": null,
+    "accusation_type": null
+  },
+  "judgment": {
+    "laws": [
+      {
+        "law_name": null,
+        "article_names": []
+      }
+    ],
+    "judgement_date": null,
+    "notaffirm_reasons": {
+      "fact_norelevance": null,
+      "procedure_illegal": null,
+      "fakecopy": null,
+      "other": null,
+      "evidence_old": null,
+      "form_illegal": null,
+      "fakeevidence": null,
+      "doubt": null,
+      "evidence_unverify": null,
+      "means_illegal": null,
+      "evidence_flaw": null,
+      "evidence_suspected": null
+    },
+    "notaffirm_content": [],
+    "staff": {
+      "judges": [],
+      "chief_judge": null,
+      "jurors": [],
+      "clerks": []
+    },
+    "appeal": {
+      "appeal_due": null,
+      "appeal_courts": []
+    },
+    "affirm_content": []
+  },
+  "document_category": null,
+  "document_producer": null,
+  "hear_info": {
+    "hear_way": null,
+    "hear_time": null,
+    "hear_isPublic": null,
+    "hear_attorney_names": [],
+    "hear_defendant_names": [],
+    "hear_procedure": null,
+    "hear_prosecutors": []
+  },
+  "evidences": {
+    "newevidence_object": [],
+    "newevidence_exam": [],
+    "newevidence_defendant": [],
+    "plaintiff_statement": [],
+    "newevidence_witness": [],
+    "newevidence_victim": [],
+    "newevidence_text": [],
+    "newevidence_audio": [],
+    "newevidence_investigate": []
+  },
+  "document_type": null,
+  "prosecutors": null
+}

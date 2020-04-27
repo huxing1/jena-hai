@@ -2,6 +2,7 @@ package org.example;
 
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Resource;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -41,17 +42,32 @@ public class CreatOWLTest {
         //TODO 测试测试 张三被指控盗窃
         DatatypeProperty nameDatatypeProperty = base.createDatatypeProperty(NS + "Name");
         DatatypeProperty occupationDatatypeProperty = base.createDatatypeProperty(NS + "occupation");
-        Individual 张三 = personClass.createIndividual(NS + "张三");
-        张三.addProperty(nameDatatypeProperty,"被告人1");
+        DatatypeProperty nameIndexDatatypeProperty = base.createDatatypeProperty(NS + "nameIndex");
+        DatatypeProperty occupationIndexDatatypeProperty = base.createDatatypeProperty(NS + "occupationIndex");
+
+        nameDatatypeProperty.addSubProperty(nameIndexDatatypeProperty);
+        occupationDatatypeProperty.addSubProperty(occupationIndexDatatypeProperty);
+
+        Individual 张三 = personClass.createIndividual(NS +"/name/"+ "张三");
         张三.addProperty(occupationDatatypeProperty,"农民");
 
-        Individual 李四 = personClass.createIndividual(NS + "李四");
+        Individual 李四 = lawClass.createIndividual(NS + "张三");
         李四.addProperty(nameDatatypeProperty,"被告人2");
+        李四.addProperty(nameIndexDatatypeProperty,"1,2,3");
+        李四.addProperty(occupationIndexDatatypeProperty,"2,3,4");
         李四.addProperty(occupationDatatypeProperty,"程序员");
+
+        Individual 累犯 = lawClass.createIndividual(NS + "累犯");
+//        personClass.dropIndividual(累犯);
+        ObjectProperty objectPropertyHasHusband = base.createObjectProperty(NS + "is");
+        //李四--》累犯
+        李四.addProperty(acceptedObjectProperty,累犯);
 
         Individual 王五 = personClass.createIndividual(NS + "王五");
         王五.addProperty(nameDatatypeProperty,"被告人3");
         王五.addProperty(occupationDatatypeProperty,"老板");
+        王五.addProperty(nameIndexDatatypeProperty,"45,4,5");
+        王五.addProperty(occupationIndexDatatypeProperty,"123,345");
 
         ObjectProperty testObjectProperty = base.createObjectProperty(NS + "测试cs");
 

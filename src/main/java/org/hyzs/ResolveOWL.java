@@ -3,6 +3,7 @@ package org.hyzs;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
+import org.apache.jena.riot.RDFFormat;
 import org.apache.jena.vocabulary.XSD;
 
 import java.io.File;
@@ -158,5 +159,7 @@ public class ResolveOWL {
 
 
         base.write(new FileOutputStream(new File("test1.owl")), "RDF/XML-ABBREV");
+
+
     }
 }
