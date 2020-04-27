@@ -26,6 +26,9 @@
     <rdfs:subClassOf rdf:resource="http://hyzs.org/ontology#presentMembers"/>
   </owl:Class>
   <owl:Class rdf:about="http://hyzs.org/ontology#trial"/>
+  <owl:Class rdf:about="http://hyzs.org/ontology#lawyer">
+    <rdfs:subClassOf rdf:resource="http://hyzs.org/ontology#presentMembers"/>
+  </owl:Class>
   <owl:Class rdf:about="http://hyzs.org/ontology#suspendedSentence">
     <rdfs:subClassOf rdf:resource="http://hyzs.org/ontology#penatly"/>
   </owl:Class>
@@ -33,9 +36,6 @@
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://hyzs.org/ontology#law"/>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="http://hyzs.org/ontology#lawyer">
-    <rdfs:subClassOf rdf:resource="http://hyzs.org/ontology#presentMembers"/>
   </owl:Class>
   <owl:Class rdf:about="http://hyzs.org/ontology#staff">
     <rdfs:subClassOf rdf:resource="http://hyzs.org/ontology#presentMembers"/>
@@ -88,17 +88,17 @@
     <rdfs:range rdf:resource="http://hyzs.org/ontology#lawyer"/>
     <rdfs:domain rdf:resource="http://hyzs.org/ontology#defendant"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://hyzs.org/ontology#prosecute">
+    <rdfs:label xml:lang="en">prosecute</rdfs:label>
+    <rdfs:range rdf:resource="http://hyzs.org/ontology#defendant"/>
+    <rdfs:domain rdf:resource="http://hyzs.org/ontology#prosecutor"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://hyzs.org/ontology#participation">
     <rdfs:label xml:lang="en">participation</rdfs:label>
     <rdfs:range rdf:resource="http://hyzs.org/ontology#trial"/>
     <rdfs:domain rdf:resource="http://hyzs.org/ontology#prosecutor"/>
     <rdfs:domain rdf:resource="http://hyzs.org/ontology#defender"/>
     <rdfs:domain rdf:resource="http://hyzs.org/ontology#staff"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://hyzs.org/ontology#prosecute">
-    <rdfs:label xml:lang="en">prosecute</rdfs:label>
-    <rdfs:range rdf:resource="http://hyzs.org/ontology#defendant"/>
-    <rdfs:domain rdf:resource="http://hyzs.org/ontology#prosecutor"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://hyzs.org/ontology#workOn">
     <rdfs:label xml:lang="en">work on</rdfs:label>
@@ -142,69 +142,106 @@
     <rdfs:range rdf:resource="http://hyzs.org/ontology#crime"/>
     <rdfs:domain rdf:resource="http://hyzs.org/ontology#penatly"/>
   </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#姓名"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#text"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人民族"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#审理方式种类"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#依据法律名称"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#index"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#文书案号"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#律所名称"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#前科刑满日期"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#文书编号"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人职业"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#审判时间"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#主刑"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#缓刑"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#前科犯罪时间"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#辩护人工作单位"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#律师姓名"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#附加刑内容"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#起诉人"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#职位"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人政治面貌"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#起诉时间"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人出生地址"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人文化程度"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#起诉文书号"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#涉嫌罪名"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人住址"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人籍贯"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#案件类别"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人出生日期"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#辩护人职业"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#审理公开情况"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#辩护人姓名"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人性别"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#律师工作单位"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#被告人姓名"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#主刑刑法期间"/>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#依据法律条款"/>
   <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#前科涉嫌罪名"/>
-  <j.0:defendant rdf:about="http://hyzs.org/ontology#/被告人姓名/徐某松">
-    <j.0:被告人职业>无业</j.0:被告人职业>
-    <j.0:被告人姓名>徐某松</j.0:被告人姓名>
-    <j.0:被告人文化程度>初中</j.0:被告人文化程度>
-    <j.0:charged>
-      <j.0:crime rdf:about="http://hyzs.org/ontology#/涉嫌罪名/故意伤害罪">
-        <j.0:涉嫌罪名>故意伤害罪</j.0:涉嫌罪名>
-      </j.0:crime>
-    </j.0:charged>
-    <j.0:被告人出生日期>1996年9月26日</j.0:被告人出生日期>
-    <j.0:被告人籍贯></j.0:被告人籍贯>
-    <j.0:被告人住址>平安县西凉县三星村三星组</j.0:被告人住址>
-    <j.0:被告人性别>男</j.0:被告人性别>
-    <j.0:被告人政治面貌></j.0:被告人政治面貌>
-    <j.0:everCommitted>
-      <rdf:Description rdf:about="http://hyzs.org/ontology#/前科涉嫌罪名/2c072091-5796-4b71-908e-56475c3a22bf">
-        <j.0:前科刑满日期>前科刑满日期</j.0:前科刑满日期>
-        <j.0:前科涉嫌罪名>2c072091-5796-4b71-908e-56475c3a22bf</j.0:前科涉嫌罪名>
-        <j.0:前科犯罪时间>2010年3月2日</j.0:前科犯罪时间>
-      </rdf:Description>
-    </j.0:everCommitted>
-    <j.0:被告人民族>汉族</j.0:被告人民族>
-    <j.0:被告人出生地址></j.0:被告人出生地址>
-  </j.0:defendant>
-  <j.0:accessoryPenalty rdf:about="http://hyzs.org/ontology#/附加刑内容/附加刑内容1">
-    <j.0:implement>
-      <j.0:defendant rdf:about="http://hyzs.org/ontology#/被告人姓名/5c564abd-ae2c-4d9c-b78d-8f998c054267">
-        <j.0:被告人民族>汉族</j.0:被告人民族>
-        <j.0:被告人性别>男</j.0:被告人性别>
-        <j.0:charged>
+  <owl:DatatypeProperty rdf:about="http://hyzs.org/ontology#文书制作单位"/>
+  <j.0:staff rdf:about="http://hyzs.org/ontology#/人民陪审员/人民陪审员">
+    <j.0:participation>
+      <j.0:trial rdf:about="http://hyzs.org/ontology#/审理方式种类/审理方式种类">
+        <j.0:judgement>
           <j.0:crime rdf:about="http://hyzs.org/ontology#/涉嫌罪名/涉嫌罪名2">
+            <j.0:baseOnLaw>
+              <j.0:lawArticle rdf:about="http://hyzs.org/ontology#/依据法律条款/第二条是猫">
+                <j.0:isPartof>
+                  <j.0:law rdf:about="http://hyzs.org/ontology#/依据法律名称/刑法第二条">
+                    <j.0:依据法律名称>刑法第二条</j.0:依据法律名称>
+                  </j.0:law>
+                </j.0:isPartof>
+                <j.0:依据法律条款>第二条是猫</j.0:依据法律条款>
+              </j.0:lawArticle>
+            </j.0:baseOnLaw>
+            <j.0:baseOnLaw>
+              <j.0:lawArticle rdf:about="http://hyzs.org/ontology#/依据法律条款/第一条是狗">
+                <j.0:isPartof>
+                  <j.0:law rdf:about="http://hyzs.org/ontology#/依据法律名称/刑法第一条">
+                    <j.0:依据法律名称>刑法第一条</j.0:依据法律名称>
+                  </j.0:law>
+                </j.0:isPartof>
+                <j.0:依据法律条款>第一条是狗</j.0:依据法律条款>
+              </j.0:lawArticle>
+            </j.0:baseOnLaw>
+            <j.0:baseOnLaw>
+              <j.0:lawArticle rdf:about="http://hyzs.org/ontology#/依据法律条款/第一条是猫">
+                <j.0:isPartof rdf:resource="http://hyzs.org/ontology#/依据法律名称/刑法第一条"/>
+                <j.0:依据法律条款>第一条是猫</j.0:依据法律条款>
+              </j.0:lawArticle>
+            </j.0:baseOnLaw>
             <j.0:涉嫌罪名>涉嫌罪名2</j.0:涉嫌罪名>
           </j.0:crime>
-        </j.0:charged>
-        <j.0:被告人出生日期>1993年4月21日</j.0:被告人出生日期>
-        <j.0:被告人住址>平安县西凉县第二十四区街道办事处</j.0:被告人住址>
-        <j.0:被告人出生地址></j.0:被告人出生地址>
+        </j.0:judgement>
+        <j.0:judgement>
+          <j.0:crime rdf:about="http://hyzs.org/ontology#/涉嫌罪名/涉嫌罪名">
+            <j.0:baseOnLaw rdf:resource="http://hyzs.org/ontology#/依据法律条款/第二条是猫"/>
+            <j.0:baseOnLaw rdf:resource="http://hyzs.org/ontology#/依据法律条款/第一条是狗"/>
+            <j.0:baseOnLaw rdf:resource="http://hyzs.org/ontology#/依据法律条款/第一条是猫"/>
+            <j.0:涉嫌罪名>涉嫌罪名</j.0:涉嫌罪名>
+          </j.0:crime>
+        </j.0:judgement>
+        <j.0:judgement>
+          <j.0:crime rdf:about="http://hyzs.org/ontology#/涉嫌罪名/故意伤害罪">
+            <j.0:baseOnLaw rdf:resource="http://hyzs.org/ontology#/依据法律条款/第二条是猫"/>
+            <j.0:baseOnLaw rdf:resource="http://hyzs.org/ontology#/依据法律条款/第一条是狗"/>
+            <j.0:baseOnLaw rdf:resource="http://hyzs.org/ontology#/依据法律条款/第一条是猫"/>
+            <j.0:涉嫌罪名>故意伤害罪</j.0:涉嫌罪名>
+          </j.0:crime>
+        </j.0:judgement>
+        <j.0:审理公开情况></j.0:审理公开情况>
+        <j.0:审理方式种类>审理方式种类</j.0:审理方式种类>
+      </j.0:trial>
+    </j.0:participation>
+    <j.0:职位>人民陪审员</j.0:职位>
+    <j.0:姓名>人民陪审员</j.0:姓名>
+  </j.0:staff>
+  <j.0:accessoryPenalty rdf:about="http://hyzs.org/ontology#/附加刑内容/附加刑内容1">
+    <j.0:implement>
+      <j.0:defendant rdf:about="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b">
         <j.0:everCommitted>
           <rdf:Description rdf:about="http://hyzs.org/ontology#/前科涉嫌罪名/前科涉嫌罪名1">
             <j.0:前科刑满日期>前科刑满日期1</j.0:前科刑满日期>
@@ -212,7 +249,6 @@
             <j.0:前科犯罪时间>前科犯罪时间1</j.0:前科犯罪时间>
           </rdf:Description>
         </j.0:everCommitted>
-        <j.0:被告人姓名>5c564abd-ae2c-4d9c-b78d-8f998c054267</j.0:被告人姓名>
         <j.0:hasLawyer>
           <j.0:lawyer rdf:about="http://hyzs.org/ontology#/律师姓名/辩护人姓名">
             <j.0:isFrom>
@@ -224,14 +260,42 @@
             <j.0:律师工作单位>辩护人工作单位</j.0:律师工作单位>
           </j.0:lawyer>
         </j.0:hasLawyer>
+        <j.0:被告人住址>平安县西凉县第二十四区街道办事处</j.0:被告人住址>
+        <j.0:charged rdf:resource="http://hyzs.org/ontology#/涉嫌罪名/涉嫌罪名"/>
         <j.0:被告人政治面貌></j.0:被告人政治面貌>
-        <j.0:charged>
-          <j.0:crime rdf:about="http://hyzs.org/ontology#/涉嫌罪名/涉嫌罪名">
-            <j.0:涉嫌罪名>涉嫌罪名</j.0:涉嫌罪名>
-          </j.0:crime>
-        </j.0:charged>
         <j.0:被告人籍贯></j.0:被告人籍贯>
         <j.0:被告人文化程度>高中</j.0:被告人文化程度>
+        <j.0:charged rdf:resource="http://hyzs.org/ontology#/涉嫌罪名/涉嫌罪名2"/>
+        <j.0:被告人出生日期>1993年4月21日</j.0:被告人出生日期>
+        <j.0:crimeTogether>
+          <j.0:defendant rdf:about="http://hyzs.org/ontology#/被告人姓名/徐某松">
+            <j.0:被告人职业>无业</j.0:被告人职业>
+            <j.0:被告人姓名>徐某松</j.0:被告人姓名>
+            <j.0:被告人文化程度>初中</j.0:被告人文化程度>
+            <j.0:charged rdf:resource="http://hyzs.org/ontology#/涉嫌罪名/故意伤害罪"/>
+            <j.0:beTried rdf:resource="http://hyzs.org/ontology#/审理方式种类/审理方式种类"/>
+            <j.0:everCommitted>
+              <rdf:Description rdf:about="http://hyzs.org/ontology#/前科涉嫌罪名/67e292f6-f4a4-4796-8a32-02833037c676">
+                <j.0:前科刑满日期>前科刑满日期</j.0:前科刑满日期>
+                <j.0:前科涉嫌罪名>67e292f6-f4a4-4796-8a32-02833037c676</j.0:前科涉嫌罪名>
+                <j.0:前科犯罪时间>2010年3月2日</j.0:前科犯罪时间>
+              </rdf:Description>
+            </j.0:everCommitted>
+            <j.0:被告人出生日期>1996年9月26日</j.0:被告人出生日期>
+            <j.0:被告人籍贯></j.0:被告人籍贯>
+            <j.0:crimeTogether rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
+            <j.0:被告人住址>平安县西凉县三星村三星组</j.0:被告人住址>
+            <j.0:被告人性别>男</j.0:被告人性别>
+            <j.0:被告人政治面貌></j.0:被告人政治面貌>
+            <j.0:被告人民族>汉族</j.0:被告人民族>
+            <j.0:被告人出生地址></j.0:被告人出生地址>
+          </j.0:defendant>
+        </j.0:crimeTogether>
+        <j.0:被告人职业>务工</j.0:被告人职业>
+        <j.0:被告人姓名>54fe8e87-79f5-4df7-b54f-d2388627f15b</j.0:被告人姓名>
+        <j.0:被告人出生地址></j.0:被告人出生地址>
+        <j.0:被告人性别>男</j.0:被告人性别>
+        <j.0:beTried rdf:resource="http://hyzs.org/ontology#/审理方式种类/审理方式种类"/>
         <j.0:everCommitted>
           <rdf:Description rdf:about="http://hyzs.org/ontology#/前科涉嫌罪名/前科涉嫌罪名2">
             <j.0:前科刑满日期>前科刑满日期2</j.0:前科刑满日期>
@@ -239,44 +303,81 @@
             <j.0:前科犯罪时间>前科犯罪时间2</j.0:前科犯罪时间>
           </rdf:Description>
         </j.0:everCommitted>
-        <j.0:被告人职业>务工</j.0:被告人职业>
+        <j.0:被告人民族>汉族</j.0:被告人民族>
       </j.0:defendant>
     </j.0:implement>
     <j.0:附加刑内容>附加刑内容1</j.0:附加刑内容>
   </j.0:accessoryPenalty>
-  <j.0:principalPenalty rdf:about="http://hyzs.org/ontology#/主刑/主刑1">
-    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/5c564abd-ae2c-4d9c-b78d-8f998c054267"/>
-    <j.0:主刑>主刑1</j.0:主刑>
-    <j.0:主刑刑法期间>主刑刑法期间1</j.0:主刑刑法期间>
-  </j.0:principalPenalty>
   <j.0:suspendedSentence rdf:about="http://hyzs.org/ontology#/缓刑/缓刑1">
-    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/5c564abd-ae2c-4d9c-b78d-8f998c054267"/>
+    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
     <j.0:缓刑>缓刑1</j.0:缓刑>
   </j.0:suspendedSentence>
-  <j.0:defender rdf:about="http://hyzs.org/ontology#/辩护人姓名/辩护人姓名1">
-    <j.0:defend rdf:resource="http://hyzs.org/ontology#/被告人姓名/5c564abd-ae2c-4d9c-b78d-8f998c054267"/>
-    <j.0:辩护人工作单位>辩护人工作单位1</j.0:辩护人工作单位>
-    <j.0:辩护人职业></j.0:辩护人职业>
-    <j.0:辩护人姓名>辩护人姓名1</j.0:辩护人姓名>
-  </j.0:defender>
+  <j.0:doc rdf:about="http://hyzs.org/ontology#/文书编号/123">
+    <j.0:inCourt>
+      <j.0:court rdf:about="http://hyzs.org/ontology#/文书制作单位/湖北法院名">
+        <j.0:sponsor rdf:resource="http://hyzs.org/ontology#/审理方式种类/审理方式种类"/>
+        <j.0:文书制作单位>湖北法院名</j.0:文书制作单位>
+      </j.0:court>
+    </j.0:inCourt>
+    <j.0:hasDefendant rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
+    <j.0:hasDefendant rdf:resource="http://hyzs.org/ontology#/被告人姓名/徐某松"/>
+    <j.0:审判时间>456</j.0:审判时间>
+    <j.0:文书编号>123</j.0:文书编号>
+  </j.0:doc>
   <j.0:suspendedSentence rdf:about="http://hyzs.org/ontology#/缓刑/缓刑">
-    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/5c564abd-ae2c-4d9c-b78d-8f998c054267"/>
+    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
     <j.0:缓刑>缓刑</j.0:缓刑>
   </j.0:suspendedSentence>
-  <j.0:accessoryPenalty rdf:about="http://hyzs.org/ontology#/附加刑内容/附加刑内容">
-    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/5c564abd-ae2c-4d9c-b78d-8f998c054267"/>
-    <j.0:附加刑内容>附加刑内容</j.0:附加刑内容>
-  </j.0:accessoryPenalty>
+  <j.0:prosecutor rdf:about="http://hyzs.org/ontology#/起诉人/1aa91c76-70ed-4f76-b8e5-3f5742dafb43">
+    <j.0:participation rdf:resource="http://hyzs.org/ontology#/审理方式种类/审理方式种类"/>
+    <j.0:beTried rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
+    <j.0:beTried rdf:resource="http://hyzs.org/ontology#/被告人姓名/徐某松"/>
+    <j.0:起诉人>1aa91c76-70ed-4f76-b8e5-3f5742dafb43</j.0:起诉人>
+    <j.0:起诉时间>起诉日期</j.0:起诉时间>
+    <j.0:起诉文书号></j.0:起诉文书号>
+  </j.0:prosecutor>
   <j.0:defender rdf:about="http://hyzs.org/ontology#/辩护人姓名/辩护人姓名">
+    <j.0:participation rdf:resource="http://hyzs.org/ontology#/审理方式种类/审理方式种类"/>
     <j.0:workOn rdf:resource="http://hyzs.org/ontology#/律师姓名/辩护人姓名"/>
-    <j.0:defend rdf:resource="http://hyzs.org/ontology#/被告人姓名/5c564abd-ae2c-4d9c-b78d-8f998c054267"/>
+    <j.0:defend rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
     <j.0:辩护人工作单位>辩护人工作单位</j.0:辩护人工作单位>
     <j.0:辩护人职业>辩护人职业</j.0:辩护人职业>
     <j.0:辩护人姓名>辩护人姓名</j.0:辩护人姓名>
   </j.0:defender>
   <j.0:principalPenalty rdf:about="http://hyzs.org/ontology#/主刑/主刑">
-    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/5c564abd-ae2c-4d9c-b78d-8f998c054267"/>
+    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
     <j.0:主刑>主刑</j.0:主刑>
     <j.0:主刑刑法期间>主刑刑法期间</j.0:主刑刑法期间>
   </j.0:principalPenalty>
+  <j.0:principalPenalty rdf:about="http://hyzs.org/ontology#/主刑/主刑1">
+    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
+    <j.0:主刑>主刑1</j.0:主刑>
+    <j.0:主刑刑法期间>主刑刑法期间1</j.0:主刑刑法期间>
+  </j.0:principalPenalty>
+  <j.0:staff rdf:about="http://hyzs.org/ontology#/审判员/审判员1">
+    <j.0:participation rdf:resource="http://hyzs.org/ontology#/审理方式种类/审理方式种类"/>
+    <j.0:职位>审判员</j.0:职位>
+    <j.0:姓名>审判员1</j.0:姓名>
+  </j.0:staff>
+  <j.0:defender rdf:about="http://hyzs.org/ontology#/辩护人姓名/辩护人姓名1">
+    <j.0:participation rdf:resource="http://hyzs.org/ontology#/审理方式种类/审理方式种类"/>
+    <j.0:defend rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
+    <j.0:辩护人工作单位>辩护人工作单位1</j.0:辩护人工作单位>
+    <j.0:辩护人职业></j.0:辩护人职业>
+    <j.0:辩护人姓名>辩护人姓名1</j.0:辩护人姓名>
+  </j.0:defender>
+  <j.0:staff rdf:about="http://hyzs.org/ontology#/审判员/审判员2">
+    <j.0:participation rdf:resource="http://hyzs.org/ontology#/审理方式种类/审理方式种类"/>
+    <j.0:职位>审判员</j.0:职位>
+    <j.0:姓名>审判员2</j.0:姓名>
+  </j.0:staff>
+  <j.0:accessoryPenalty rdf:about="http://hyzs.org/ontology#/附加刑内容/附加刑内容">
+    <j.0:implement rdf:resource="http://hyzs.org/ontology#/被告人姓名/54fe8e87-79f5-4df7-b54f-d2388627f15b"/>
+    <j.0:附加刑内容>附加刑内容</j.0:附加刑内容>
+  </j.0:accessoryPenalty>
+  <j.0:staff rdf:about="http://hyzs.org/ontology#/审判长/审判长">
+    <j.0:participation rdf:resource="http://hyzs.org/ontology#/审理方式种类/审理方式种类"/>
+    <j.0:职位>审判长</j.0:职位>
+    <j.0:姓名>审判长</j.0:姓名>
+  </j.0:staff>
 </rdf:RDF>

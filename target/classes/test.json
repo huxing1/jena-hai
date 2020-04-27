@@ -1,7 +1,9 @@
 {
   "document_reference": {
     "trail": null,
-    "JDN": null
+    "JDN": {
+      "index": "111",
+      "text": "湖北JDN"}
   },
   "document_name": null,
   "defendants": [
@@ -382,15 +384,42 @@
   "accusation": {
     "accusation_reference": null,
     "accusation_procurator": null,
-    "prosecute_charge_name": null,
-    "accusation_time": null,
+    "prosecute_charge_name": {
+      "index": "230,231",
+      "text": "指控罪名"
+    },
+    "accusation_time": {
+      "index": "230,231",
+      "text": "起诉日期"
+    },
     "accusation_type": null
   },
   "judgment": {
     "laws": [
       {
-        "law_name": null,
-        "article_names": []
+        "law_name": {
+          "index": "230,231",
+          "text": "刑法第一条"
+        },
+        "article_names": [{
+          "index": "230,231",
+          "text": "第一条是猫"
+        },{
+          "index": "230,231",
+          "text": "第一条是狗"
+        }]
+      },{
+        "law_name": {
+          "index": "230,231",
+          "text": "刑法第二条"
+        },
+        "article_names": [{
+          "index": "230,231",
+          "text": "第二条是猫"
+        },{
+          "index": "230,231",
+          "text": "第二条是猫"
+        }]
       }
     ],
     "judgement_date": null,
@@ -410,9 +439,19 @@
     },
     "notaffirm_content": [],
     "staff": {
-      "judges": [],
-      "chief_judge": null,
-      "jurors": [],
+      "judges": [{
+        "index": "230,231",
+        "text": "审判员1"},
+        {
+          "index": "230,231",
+          "text": "审判员2"}
+        ],
+      "chief_judge": {
+        "index": "230,231",
+        "text": "审判长"},
+      "jurors": [{
+        "index": "230,231",
+        "text": "人民陪审员"}],
       "clerks": []
     },
     "appeal": {
@@ -422,9 +461,14 @@
     "affirm_content": []
   },
   "document_category": null,
-  "document_producer": null,
+  "document_producer":  {
+    "index": "230,231",
+    "text": "湖北法院名"
+  },
   "hear_info": {
-    "hear_way": null,
+    "hear_way": {
+      "index": "230,231",
+      "text": "审理方式种类"},
     "hear_time": null,
     "hear_isPublic": null,
     "hear_attorney_names": [],

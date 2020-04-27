@@ -31,10 +31,51 @@ public class HaiIndividual {
     * @Author: hux
     * @Date: 2020/4/26
     */
-    public  Map<String, Map<String, String>> getKeyText(Map<String, Object> Properties) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public  Map<String, Map<String, String>> getKeyText(Map<String, Object> properties) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 
         Map<String, Map<String, String>> keyText=new HashMap<>();
-        for ( Map.Entry<String, Object> property : Properties.entrySet()) {
+        for ( Map.Entry<String, Object> property : properties.entrySet()) {
+            Map<String, String> tempMap=new HashMap<>();
+            String text="";
+            String index="";
+            if (property.getValue()!=null) {
+                for (Field f : property.getValue().getClass().getDeclaredFields()) {   //遍历通过反射获取object的类中的属性名
+                    f.setAccessible(true);    //设置改变属性为可访问
+                    if (f.getName().equals("text")) {
+//                                String text= f.get(property.getValue().getClass().getMethod("getText")).toString();
+                        Method m = property.getValue().getClass().getMethod("getText");
+                        Object invoke = m.invoke(property.getValue());
+                        text = invoke.toString() == null ? "" : invoke.toString();
+                    }
+                    if (f.getName().equals("index")) {
+                        Method m = property.getValue().getClass().getMethod("getIndex");
+                        Object invoke = m.invoke(property.getValue());
+                        index = invoke == null ? "" : invoke.toString();
+                    }
+                }
+            }
+            tempMap.put("text",text);
+            tempMap.put("index",index);
+            keyText.put(property.getKey(),tempMap);
+        }
+        return keyText;
+    }
+
+   /**
+   * @Description: 获取实体的index和text值
+   * @Param: [list]
+   * @return: java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.String>>
+   * @Author: hux
+   * @Date: 2020/4/27
+   */
+    public  Map<String, Map<String, String>> getKeyText(List<Map<String, Object>> list) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        Map<String, Object> properties=new HashMap<>();
+        for(Map<String, Object> map :list ){
+            properties.putAll(map);
+        }
+
+        Map<String, Map<String, String>> keyText=new HashMap<>();
+        for ( Map.Entry<String, Object> property : properties.entrySet()) {
             Map<String, String> tempMap=new HashMap<>();
             String text="";
             String index="";
