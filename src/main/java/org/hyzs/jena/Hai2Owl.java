@@ -9,6 +9,7 @@ import org.hyzs.entry.JsonEntry;
 import org.hyzs.utils.FilesUtils;
 import org.hyzs.utils.JsonUtils;
 import org.hyzs.utils.MySQLUtil;
+import org.hyzs.utils.TextUtil;
 import org.springframework.util.ResourceUtils;
 
 import java.io.File;
@@ -41,6 +42,7 @@ public class Hai2Owl {
 
     private static void resolveOwl() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, IOException, SQLException {
 
+        TextUtil textUtil=new TextUtil();
         Connection connection = MySQLUtil.getConnection();
         Statement statement = connection.createStatement();
         FilesUtils filesUtils = new FilesUtils();
@@ -515,7 +517,7 @@ public class Hai2Owl {
                             if (lawsBean.getArticle_names() != null) {
                                 for (JsonEntry.JudgmentBean.LawsBean.ArticleNamesBean articleNamesBean : lawsBean.getArticle_names()) {
                                     if (articleNamesBean.getText() != null) {
-                                        lawAriticleIndividual = lawArticleClass.createIndividual(NS + "/依据法律条款/" + articleNamesBean.getText());
+                                        lawAriticleIndividual = lawArticleClass.createIndividual(NS + "/依据法律条款/" + articleNamesBean.getText() );
                                         DatatypeProperty datatypeProperty = base.createDatatypeProperty(NS + "依据法律条款");
                                         lawAriticleIndividual.addProperty(datatypeProperty, articleNamesBean.getText());
                                         lawArticleIndividuals.add(lawAriticleIndividual);

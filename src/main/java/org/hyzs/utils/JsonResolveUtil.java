@@ -15,8 +15,8 @@ import java.util.Map;
  * @author: hux
  * @create: 2020-04-21 09:59
  **/
-public class JsonResoveUtil {
-    private  JsonEntry jsonResove(JSONObject o ){
+public class JsonResolveUtil {
+    private  JsonEntry jsonResolve(JSONObject o ){
 
 //        AiOpenClientConfig aiOpenClientConfig = new AiOpenClientConfig();
 //        AIOpenClient aiClient = aiOpenClientConfig.aiOpenClient();
